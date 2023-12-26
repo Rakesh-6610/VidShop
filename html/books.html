@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rakesh karmaker">
+    <meta name="keywords" content="vidshop,videoshop,videogameshop,vidshop team">
+    <meta name="description"
+        content="Welcome to VidShop-books.Here you are able to see the best books all over the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <meta property="og:image:secure_url" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="image_src" href="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="canonical" href="https://vidshop010.000webhostapp.com" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../pics/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../pics/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../pics/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../pics/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../pics/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../pics/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../pics/apple-touch-icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../pics/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../pics/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../pics/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../pics/apple-touch-icon-192x192.png">
+    <link rel="shortcut icon" href="../pics/logo700.png">
+
+    <link rel="stylesheet" href="../css/books.css">
+
+    <title>VidShop-Books</title>
+</head>
+
+<body id="body">
+    <section id="vidshop_book">
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------navbar starts here------------------------------------ -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+
+
+        <nav id="nav">
+            <l class="pc"><a href="../index.html" id="logoname" style="text-decoration: none;">
+                    <p class="hello">VidShop</p>
+                </a></l>
+
+
+
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!-- ----------------------------------mobile navbar starts here---------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+
+            <li id="mobile">
+                <button class="nav-btd" id="nav-btd-open" onclick="nav_list_open()"><i
+                        class="fa-solid fa-bars bars"></i></button>
+                <button class="nav-btd" id="nav-btd-close" onclick="nav_list_close()" style="display: none;"><i
+                        class="fa-solid fa-xmark bars"></i></button>
+                <div id="nav-mobile" style="display: none;">
+                    <ul id="nav-list">
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="../index.html" title="Home">Home</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <button class="navcategory mobile-category" id="category-u-m">Category <i
+                                    class="fa-solid fa-angle-down  mobile-angle"></i></button>
+                            <ul id="mobile-category">
+                                <li class="cat_li_m"><a href="books.html" class="ser" id="cat_b">Books</a></li>
+                                <li class="cat_li_m"><a href="games.html" class="ser" id="cat_g">Games</a></li>
+                                <li class="cat_li_m"><a href="website.html" class="ser" id="cat_w">Website</a></li>
+                                <li class="cat_li_m" style="padding-bottom: 10px;"><a href="other.html" class="ser"
+                                        id="cat_o">Other</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="mailto:vidshop010@gmail.com" target="_blank"
+                                title="Contact Us">Contact us</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="about.html" target="_blank" title="About Us">About
+                                Us</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a href="team.html" class="mobile-navcategory" target="_blank" title="Team">Team</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!-- ---------------------------------------pc navbar starts here--------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+
+
+            <ul class="navbar-left">
+
+
+                <li class="pc">
+                    <a class="navcategory" href="../index.html" title="Home">Home</a>
+                </li>
+
+
+                <li class="pc">
+                    <button class="navcategory category" id="category-u">Category <i
+                            class="fa-solid fa-angle-down angle"></i></button>
+                    <ul id="category">
+                        <li class="cat_li"><a href="books.html" class="ser" id="cat_b">Books <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left: 17px;"></i></a></li>
+                        <li class="cat_li"><a href="games.html" class="ser" id="cat_g">Games <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left: 9px;"></i></a></li>
+                        <li class="cat_li"><a href="website.html" class="ser" id="cat_w">Website <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left:2px;"></i></a></li>
+                        <li class="cat_li" style="padding-bottom: 10px;"><a href="other.html" class="ser"
+                                id="cat_o">Other
+                                <i class="fa-solid fa-arrow-right arrow" style="padding-left: 20px;"></i></a></li>
+                    </ul>
+                </li>
+
+
+                <li class="pc">
+                    <a class="navcategory" href="mailto:vidshop010@gmail.com" target="_blank" title="Contact Us">Contact
+                        us</a>
+                </li>
+
+
+                <li class="pc">
+                    <a class="navcategory" href="about.html" target="_blank" title="About Us">About Us</a>
+                </li>
+
+
+                <li class="pc">
+                    <a href="team.html" class="navcategory" target="_blank" title="Team">Team</a>
+                </li>
+
+
+            </ul>
+        </nav>
+        <section id="mainpart">
+
+            <!-- ------------------------------main part starts here----------------------------------  -->
+            <main id="main">
+                <section id="about_book">
+                    <div class="about_book_para">
+                        <p class="about_book_heading book_head_animate">Book</p>
+                        <p class="abou_book_paragraph book_para_animate">A book is a medium for recording <a
+                                href="https://en.wikipedia.org/wiki/Information" class="para_link">information</a> in
+                            the form of <a href="https://en.wikipedia.org/wiki/Writing" class="para_link">writing</a> or
+                            <a href="https://en.wikipedia.org/wiki/Image" class="para_link">images</a>, typically
+                            composed of many <a href="https://en.wikipedia.org/wiki/Page_(paper)"
+                                class="para_link">pages</a> (made of <a href="https://en.wikipedia.org/wiki/Papyrus"
+                                class="para_link">papyrus</a>, <a href="https://en.wikipedia.org/wiki/Parchment"
+                                class="para_link">parchment</a>, <a href="https://en.wikipedia.org/wiki/Vellum"
+                                class="para_link">vellum</a>, or <a href="https://en.wikipedia.org/wiki/Paper"
+                                class="para_link">paper</a>) <a href="https://en.wikipedia.org/wiki/Bookbinding"
+                                class="para_link">bound</a> together and protected by a <a
+                                href="https://en.wikipedia.org/wiki/Book_cover" class="para_link">cover</a>.<sup>[1]
+                            </sup>It can also be a handwritten or printed work of fiction or nonfiction, usually on
+                            sheets of paper fastened or bound together within covers. The technical term for this
+                            physical arrangement is <a href="https://en.wikipedia.org/wiki/Codex"
+                                class="para_link">codex</a> (plural, codices). In the history of hand-held physical
+                            supports for extended written compositions or records, the codex replaces its predecessor,
+                            the <a href="https://en.wikipedia.org/wiki/Scroll" class="para_link">scroll</a>. A single
+                            sheet in a codex is a <a href="https://en.wikipedia.org/wiki/Recto_and_verso"
+                                class="para_link">leaf</a> and each side of a leaf is a <a
+                                href="https://en.wikipedia.org/wiki/Page_(paper)" class="para_link">page</a>.
+                        </p>
+                        <div class="para_line"></div>
+                    </div>
+                    <div class="about_book_image book_image_animate">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/03/09/09/book-3057902_1280.png" alt=""
+                            id="about_book_image">
+                    </div>
+                </section>
+                <section id="best_book">
+                    <div id="best_book_head">
+                        <p class="best_book_head book_heading_animate">Best Book</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="best_book_container">
+                        <div class="best_book_image book_image_animate">
+                            <a id="best_book_image" class="book"
+                                style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675641094i/62050250.jpg');"
+                                href="https://www.goodreads.com/book/show/62050250-a-living-remedy">
+                                <div class="book_background">
+                                    <p class="book_word book_display">Written By</p>
+                                    <p class="book_writer book_display">Jonathan Eig</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="best_book_para">
+                            <p class="best_book_name book_head_animate">A Living Remedy, Nicole Chung</p>
+                            <p class="best_book_paragraph book_para_animate">In her first memoir, TIME contributor
+                                Nicole Chung described her experience growing up as a Korean American adoptee in a
+                                predominantly white town. Her follow-up, A Living Remedy, continues her exploration into
+                                identity, this time focusing on her grief after losing both of her parents. Chung’s
+                                father died of diabetes and kidney disease in 2018. Then, less than a year later, her
+                                mother is diagnosed with cancer and later dies during the COVID-19 pandemic. As Chung
+                                wrestles with these overwhelming losses in A Living Remedy, she dissects the inequities
+                                inherent to American society by recounting the challenges her parents faced in accessing
+                                medical care. The result is a moving portrait of a daughter reckoning with her place in
+                                a broken world—and making sense of life without her parents in it.</p>
+                            <div class="para_line"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="popular_books">
+                    <div id="popular_book_head">
+                        <p class="popular_book_head book_heading_animate">Popular Books</p>
+                        <div class="line"></div>
+                    </div>
+                    <section class="popular_books">
+                        <a href="https://www.goodreads.com/book/show/62039291-king" class="book popular_book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1667552868i/62039291.jpg'); ">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Jonathan Eig</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/61111034-our-share-of-night"
+                            class="book popular_book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1660429329i/61111034.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Mariana Enríquez</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/61714633-the-wager" class="book popular_book"
+                            style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/The-wager-david-grann-bookcover.jpg/220px-The-wager-david-grann-bookcover.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">David Grann</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/61089492-this-other-eden" class="book popular_book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1665472154i/61089492.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Paul Harding</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/63189301-the-half-known-life"
+                            class="book popular_book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1667314051i/63189301.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Pico Iyer</p>
+                            </div>
+                        </a>
+                    </section>
+                </section>
+                <section id="books">
+                    <div id="book_head">
+                        <p class="book_head book_heading_animate">Books</p>
+                        <div class="line"></div>
+                    </div>
+                    <section id="books_container">
+                        <a href="https://www.goodreads.com/book/show/61686012-greek-lessons" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675083122i/61686012.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Han Kang</p>
+                            </div>
+                        </a>
+                        <a href="https://goodreads.com/book/show/60784729-biography-of-x" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661091831i/60784729.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Catherine Lacey</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/60460704-lone-women" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1673265868i/60460704.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Victor LaValle</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/61089551-after-sappho" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1668324895i/61089551.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Selby Wynn Schwartz</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/180357146-the-covenant-of-water" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687600746i/180357146.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Abraham Verghese</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/58523626-y-n" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1660260327i/58523626.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Esther Yi</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/62368170-the-272" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1684815025i/62368170.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Rachel L. Swarns</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/77920745-a-day-in-the-life-of-abed-salama"
+                            class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681105340i/77920745.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Nathan Thrall</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/61398927-above-ground" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1674503481i/61398927.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Clint Smith</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/101404407-absolution" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1678678178i/101404407.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Alice McDermott</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/527744.After_the_Funeral" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1384881992i/527744.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Agatha Christie</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/65215478-all-souls" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1673875632i/65215478.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Saskia Hamilton</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/61884832-all-the-sinners-bleed" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663544598i/61884832.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">S.A. Cosby</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/62039277-august-blue" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669768854i/62039277.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Deborah Levy</p>
+                            </div>
+                        </a>
+                        <a href="https://www.goodreads.com/book/show/62039166-the-bee-sting" class="book"
+                            style="background-image: url('https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1674502938i/62039166.jpg');">
+                            <div class="book_background">
+                                <p class="book_word book_display">Written By</p>
+                                <p class="book_writer book_display">Paul Murray</p>
+                            </div>
+                        </a>
+                    </section>
+                </section>
+            </main>
+            <!-- --------------------------------footer part starts here------------------------------  -->
+
+            <footer id="footer">
+                <ul id="social-icon">
+
+                    <li class="asocial-icon">
+                        <a href="https://www.facebook.com/groups/837578491429797" target="_blank" title="facebook"
+                            class="aicon">
+                            <i class="fa-brands fa-facebook icon" id="facebookj"></i>
+                        </a>
+                    </li>
+
+                    <li class="asocial-icon">
+                        <a href="https://www.messenger.com/t/24399959282951076" target="_blank" title="messenger"
+                            id="meggengerj" class="aicon">
+                            <i class="fa-brands fa-facebook-messenger icon" id="meggengerj"></i>
+                        </a>
+                    </li>
+                    <li class="asocial-icon">
+                        <a href="https://discord.gg/RbMj5enU" target="_blank" title="discord" class="aicon">
+                            <i class="fa-brands fa-discord icon" id="discordj"></i>
+                        </a>
+                    </li>
+                    <li class="asocial-icon">
+                        <a href="https://web.telegram.org/k/" target="_blank" title="telegram" class="aicon">
+                            <i class="fa-brands fa-telegram icon" id="telegramj"></i>
+                        </a>
+                    </li>
+                    <li class="asocial-icon">
+                        <a href="https://twitter.com/vidshop010" target="_blank" title="twitter" id="twitterj"
+                            class="aicon">
+                            <i class="fa-brands fa-x-twitter icon"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="../index.html" title="Home">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="about.html" title="About Us">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="../index.html" title="Services">Services</a></li>
+                    <li class="menu__item"><a class="menu__link" href="team.html" title="Team">Team</a></li>
+                    <li class="menu__item"><a class="menu__link" href="mailto:vidshop010@gmail.com"
+                            title="Contact Us">Contact</a></li>
+                </ul>
+                <p>&copy;2023 VidShop | All Rights Reserved</p>
+            </footer>
+        </section>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/books.js"></script>
+
+</html>

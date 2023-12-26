@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rakesh karmaker">
+    <meta name="keywords" content="vidshop,videoshop,videogameshop,vidshop team">
+    <meta name="description"
+        content="Welcome to VidShop-other.Here you can see a lot of experimental things we do and rate them.If the rating is good we will add the experimental thing in out home page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <meta property="og:image:secure_url" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="image_src" href="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="canonical" href="https://vidshop010.000webhostapp.com" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../pics/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../pics/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../pics/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../pics/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../pics/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../pics/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../pics/apple-touch-icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../pics/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../pics/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../pics/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../pics/apple-touch-icon-192x192.png">
+    <link rel="shortcut icon" href="../pics/logo700.png">
+    <link rel="stylesheet" href="other_css/composite.css">
+    <!-- <script src="other_js/prime.js"></script> -->
+    <title>VidShop-Composite number</title>
+</head>
+
+<body id="primenum">
+    <main id="main-prime">
+        <main id="mainpart">
+            <section id="testing">
+                <section id="result-area">
+                    <div class="result-screen" id="no">
+                        <p class="resultp" id="rno">No Result</p>
+                    </div>
+                    <div class="result-screen" id="false" style="display: none;">
+                        <p class="resultp"><i class="fa-solid fa-face-smile-wink emoji"></i><br><span
+                                id="number-r2">x</span><br><span>Is a composite number</span></p>
+                    </div>
+                    <div class="result-screen" id="true" style="display: none;">
+                        <p class="resultp"><i class="fa-solid fa-face-sad-tear emoji"></i><br><span
+                                id="number-r1">x</span><br><span>Is not a composite number</span></p>
+                    </div>
+                </section>
+                <div id="testingpart">
+                    <h2 id="heading1">What's a Composite number?</h2>
+                    <p id="para1">composite numbers are numbers that have more than two factors. These numbers are also
+                        called composites. Composite numbers are just the opposite of prime numbers which have only two
+                        factors, i.e. 1 and the number itself. All the natural numbers which are not prime numbers are
+                        composite numbers as they can be divided by more than two numbers. For example, 6 is a composite
+                        number because it is divisible by 1, 2, 3 and even by 6. </p>
+                    <h2 id="heading2">Test your number</h2>
+                    <div id="test">
+                        <form>
+                            <label for="num" id="lnum">Enter your number: </label>
+                            <input type="number" name="num" id="num" required placeholder="Enter here......"><br>
+                            <button type="button" onclick="compositetest()" class="test-btd">Test</button>
+                            <!-- <button type="button" onclick="primenum_show()" class="test-btd">See more prime number</button> -->
+                        </form>
+                        <script>
+                            function prime(x) {
+                                if (x < 2) {
+                                    return false;
+                                }
+                                else if (x == 2) {
+                                    return true;
+                                }
+                                else {
+                                    for (let i = 2; i <= Math.sqrt(x); i++) {
+                                        if (x % i === 0) {
+                                            return false;
+                                        }
+                                    }
+                                    return true;
+                                }
+                            };
+                            function compositetest() {
+                                let no = document.getElementById('no');
+                                let t = document.getElementById('true');
+                                let f = document.getElementById('false');
+                                no.style.display = "none";
+                                t.style.display = "none";
+                                f.style.display = "none";
+
+                                let tn = document.getElementById('number-r1');
+                                let fn = document.getElementById('number-r2');
+
+                                const composite_n = document.getElementById('num').value;
+                                const composite_t = parseInt(composite_n);
+                                if (prime(prime_t)) {
+                                    tn.innerHTML = composite_t;
+                                    t.style.display = "block";
+                                } else {
+                                    fn.innerHTML = composite_t;
+                                    f.style.display = "block";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+    </section>
+</body>
+
+</html>

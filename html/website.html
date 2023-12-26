@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rakesh karmaker">
+    <meta name="keywords" content="vidshop,videoshop,videogameshop,vidshop team">
+    <meta name="description"
+        content="Welcome to VidShop-Website.Here you are able to build your own websites with a low cost. We will build your website for you.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <meta property="og:image:secure_url" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="image_src" href="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="canonical" href="https://vidshop010.000webhostapp.com" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../pics/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../pics/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../pics/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../pics/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../pics/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../pics/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../pics/apple-touch-icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../pics/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../pics/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../pics/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../pics/apple-touch-icon-192x192.png">
+    <link rel="shortcut icon" href="../pics/logo700.png">
+
+    <link rel="stylesheet" href="../css/website.css">
+
+    <title>VidShop-Website</title>
+</head>
+
+<body id="body">
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------navbar starts here------------------------------------ -->
+    <!-- --------------------------------------------------------------------------------------------- -->
+
+
+    <header>
+        <nav id="nav">
+            <li class="pc"><a href="../index.html" id="logoname" style="text-decoration: none;">
+                    <p class="hello">VidShop</p>
+                </a></li>
+
+
+
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!-- ----------------------------------mobile navbar starts here---------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+
+            <li id="mobile">
+                <button class="nav-btd" id="nav-btd-open" onclick="nav_list_open()"><i
+                        class="fa-solid fa-bars bars"></i></button>
+                <button class="nav-btd" id="nav-btd-close" onclick="nav_list_close()" style="display: none;"><i
+                        class="fa-solid fa-xmark bars"></i></button>
+                <div id="nav-mobile" style="display: none;">
+                    <ul id="nav-list">
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="../index.html" title="Home">Home</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <button class="navcategory mobile-category" id="category-u-m">Category <i
+                                    class="fa-solid fa-angle-down  mobile-angle"></i></button>
+                            <ul id="mobile-category">
+                                <li class="cat_li_m"><a href="books.html" class="ser" id="cat_b">Books</a></li>
+                                <li class="cat_li_m"><a href="games.html" class="ser" id="cat_g">Games</a></li>
+                                <li class="cat_li_m"><a href="website.html" class="ser" id="cat_w">Website</a></li>
+                                <li class="cat_li_m" style="padding-bottom: 10px;"><a href="other.html" class="ser"
+                                        id="cat_o">Other</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="mailto:vidshop010@gmail.com" target="_blank"
+                                title="Contact Us">Contact us</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="about.html" target="_blank" title="About Us">About
+                                Us</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a href="team.html" class="mobile-navcategory" target="_blank" title="Team">Team</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!-- ---------------------------------------pc navbar starts here--------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+
+
+            <ul class="navbar-left">
+
+
+                <li class="pc">
+                    <a class="navcategory" href="../index.html" title="Home">Home</a>
+                </li>
+
+
+                <li class="pc">
+                    <button class="navcategory category" id="category-u">Category <i
+                            class="fa-solid fa-angle-down angle"></i></button>
+                    <ul id="category">
+                        <li class="cat_li"><a href="books.html" class="ser" id="cat_b">Books <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left: 17px;"></i></a></li>
+                        <li class="cat_li"><a href="games.html" class="ser" id="cat_g">Games <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left: 9px;"></i></a></li>
+                        <li class="cat_li"><a href="website.html" class="ser" id="cat_w">Website <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left:2px;"></i></a></li>
+                        <li class="cat_li" style="padding-bottom: 10px;"><a href="other.html" class="ser"
+                                id="cat_o">Other
+                                <i class="fa-solid fa-arrow-right arrow" style="padding-left: 20px;"></i></a></li>
+                    </ul>
+                </li>
+
+
+                <li class="pc">
+                    <a class="navcategory" href="mailto:vidshop010@gmail.com" target="_blank" title="Contact Us">Contact
+                        us</a>
+                </li>
+
+
+                <li class="pc">
+                    <a class="navcategory" href="about.html" target="_blank" title="About Us">About Us</a>
+                </li>
+
+
+                <li class="pc">
+                    <a href="team.html" class="navcategory" target="_blank" title="Team">Team</a>
+                </li>
+
+
+            </ul>
+        </nav>
+
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--!--------------------------------- header part starts here------------------------------------ -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <section class="header-top">
+            <div id="header-img"></div>
+            <div class="header-div">
+                <p class="header-heading header_ani">Websites Made Easy</p>
+                <p class="header-top-p header_ani">Build your own brand new website</p>
+            </div>
+        </section>
+        <section class="header-items">
+            <section id="header-items">
+                <div class="header-item header_item" id="item1">
+                    <i class="fa-solid fa-gauge-high header-icon"></i>
+                    <p class="header-p">Fast</p>
+                </div>
+                <div class="header-item header_item" id="item2">
+                    <i class="fa-solid fa-shield-halved header-icon"></i>
+                    <p class="header-p">Secure</p>
+                </div>
+                <div class="header-item header_item" id="item3">
+                    <i class="fa-solid fa-user-group header-icon"></i>
+                    <p class="header-p">User-Friendly</p>
+                </div>
+                <div class="header-item header_item" id="item4">
+                    <i class="fa-solid fa-brain header-icon"></i>
+                    <p class="header-p">Creative</p>
+                </div>
+            </section>
+        </section>
+    </header>
+
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <!--!------------------------------------------ main part starts here----------------------------- -->
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <main>
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--!---------------------------------- plans part starts here------------------------------------ -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <section id="plans">
+            <section id="plans-heading">
+                <div class="plans-heading heading_ani">Our Plans</div>
+                <div class="line"></div>
+            </section>
+            <section id="plans-main">
+                <section class="plan-section1">
+                    <section class="plan-part1">
+                        <a class="plan" href="#contact-us">
+                            <p class="plan-name">Start making website</p>
+                            <p class="plan-price">Start for free</p>
+                        </a>
+                        <a class="plan" href="#contact-us">
+                            <p class="plan-name">Domains</p>
+                            <p class="plan-price">&dollar;1/mo</p>
+                        </a>
+                        <a class="plan" href="#contact-us">
+                            <p class="plan-name">SSL Security</p>
+                            <p class="plan-price">Free with plans</p>
+                        </a>
+                    </section>
+                    <section class="plan-part2">
+                        <a class="plan" href="#templates">
+                            <p class="plan-name">Flexible Website Templates</p>
+                            <p class="plan-price">Start for free</p>
+                        </a>
+                        <a class="plan" href="#contact-us">
+                            <p class="plan-name">Domain + Email</p>
+                            <p class="plan-price">&dollar;1.5/mo</p>
+                        </a>
+                        <a class="plan" href="../index.html">
+                            <p class="plan-name">Online Store</p>
+                            <p class="plan-price">&dollar;10/mo</p>
+                        </a>
+                    </section>
+                </section>
+                <a class="plan-section2" href="#contact-us">
+                    <p class="plan-name-3">Web Design Services</p>
+                    <p class="plan-price-3">Starting with &dollar;90</p>
+                </a>
+            </section>
+        </section>
+
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--!------------------------------- templates part starts here----------------------------------- -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <section id="templates">
+            <section id="templates-heading">
+                <p class="templates-heading">Website templates made easy</p>
+                <p class="templates-para">Explore responsive, stunning customizable website template designs tailored to
+                    thrive in your industry.</p>
+                <a href="#plans" class="templates-a">Create your website now <i class="fa-solid fa-arrow-right arrow"
+                        style="padding-left: 20px;"></i></a>
+            </section>
+
+            <section id="templates-main">
+                <div class="slider">
+                    <figure>
+                        <div class="slide">
+                            <img src="https://oxforddigital.co.uk/wp-content/uploads/Screenshot-March-2018-Squarespace-Website-Homepage.png"
+                                alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://th.bing.com/th/id/R.01f4af07e2535b37eb6511a0ffea666e?rik=tMQ2FOMns%2bsmjg&pid=ImgRaw&r=0"
+                                alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://th.bing.com/th/id/R.7f3a6226edac7f0796e8734fa5b66cd3?rik=%2bY6qshaV%2bDR7Mw&pid=ImgRaw&r=0"
+                                alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*SNUFXbMYSOArQbA-Iwi-jA.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.pinimg.com/originals/86/74/dc/8674dcb7bd379168b0333c1d39aa2e4d.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://i.pinimg.com/originals/5a/94/52/5a945274d7309bcaf233e1b46c7d25e0.jpg"
+                                alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://oxforddigital.co.uk/wp-content/uploads/Screenshot-March-2018-Squarespace-Website-Homepage.png"
+                                alt="">
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </section>
+        </section>
+
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--!-------------------------------- clients part starts here------------------------------------ -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <section id="clients">
+            <section id="clients-heading">
+                <div class="clients-heading heading_ani">Clients</div>
+                <div class="line"></div>
+            </section>
+
+            <section id="clients-main">
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-1">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-2">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-3">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-4">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-5">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-6">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-7">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-8">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-9">Our Client</p>
+                </div>
+                <div class="animate-client client_ani">
+                    <p class="client-name" id="client-10">Our Client</p>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--!--------------------------- website free part starts here------------------------------------ -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <section id="f-website">
+            <p class="f-website-heading">Make your own website</p>
+            <p class="f-website-p">Whether you're growing your business, selling online or establishing an online
+                presence - discover the easiest way to get online with the Website.com website builder.</p>
+            <a href="#plans" class="f-website-a">Get a free website <i class="fa-solid fa-arrow-right arrow"
+                    style="padding-left: 20px;"></i></a>
+        </section>
+
+
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--!------------------------------- websites part starts here------------------------------------ -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <section id="websites">
+            <section id="websites-heading">
+                <p class="websites-heading heading_ani">Websites</p>
+            </section>
+
+            <section class="websites">
+                <div class="website">
+                    <i class="fa-solid fa-book website-i"></i>
+                    <p class="website-h">Books</p>
+                    <p class="website-p">You can read as much books as you like for free.So read them now for free!</p>
+                    <a href="books.html" class="website-a">Learn more</a>
+                </div>
+                <div class="website">
+                    <i class="fa-solid fa-headset website-i"></i>
+                    <p class="website-h">Games</p>
+                    <p class="website-p">You can download a lot of games for free.There are old games and new games.</p>
+                    <a href="games.html" class="website-a">Learn more</a>
+                </div>
+                <div class="website">
+                    <i class="fa-solid fa-magnifying-glass website-i"></i>
+                    <p class="website-h">Others</p>
+                    <p class="website-p">Here you can review a lot of experimental things created by us and rate them.
+                    </p>
+                    <a href="other.html" class="website-a">Learn more</a>
+                </div>
+            </section>
+        </section>
+
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--!------------------------ contact us part starts Here----------------------------------------- -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <section id="contact-us">
+
+            <section id="contact-us-main">
+                <div class="color-top"></div>
+                <div class="color-bottom"></div>
+                <div class="color-left"></div>
+                <div class="color-right"></div>
+                <section id="form">
+                    <section id="information">
+                        <div class="information">
+                            <img src="../pics/location.png" alt="Location" class="location">
+                            <div class="info">
+                                <p id="number">Number: +880 1234563842</p>
+                                <p id="email">Email: vidshop@gmail.com</p>
+                                <p id="address">Address: 19, Tent Tower, City, BD</p>
+                            </div>
+                        </div>
+                    </section>
+                    <form>
+                        <input type="text" placeholder="Your name" class="name from-items">
+                        <input type="email" name="email" class="email from-items" placeholder="Your email address">
+                        <textarea name="massage" class="message from-items" style="resize: none;"
+                            placeholder="Your message"></textarea>
+                        <input type="submit" value="submit" class="submit">
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <!--! -----------------------------------footer part starts here---------------------------------  -->
+    <!-- --------------------------------------------------------------------------------------------- -->
+
+    <footer id="footer">
+        <ul id="social-icon">
+
+            <li class="asocial-icon">
+                <a href="https://www.facebook.com/groups/837578491429797" target="_blank" title="facebook"
+                    class="aicon">
+                    <i class="fa-brands fa-facebook icon" id="facebookj"></i>
+                </a>
+            </li>
+
+            <li class="asocial-icon">
+                <a href="https://www.messenger.com/t/24399959282951076" target="_blank" title="messenger"
+                    id="meggengerj" class="aicon">
+                    <i class="fa-brands fa-facebook-messenger icon" id="meggengerj"></i>
+                </a>
+            </li>
+            <li class="asocial-icon">
+                <a href="https://discord.gg/RbMj5enU" target="_blank" title="discord" class="aicon">
+                    <i class="fa-brands fa-discord icon" id="discordj"></i>
+                </a>
+            </li>
+            <li class="asocial-icon">
+                <a href="https://web.telegram.org/k/" target="_blank" title="telegram" class="aicon">
+                    <i class="fa-brands fa-telegram icon" id="telegramj"></i>
+                </a>
+            </li>
+            <li class="asocial-icon">
+                <a href="https://twitter.com/vidshop010" target="_blank" title="twitter" id="twitterj" class="aicon">
+                    <i class="fa-brands fa-x-twitter icon"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="../index.html" title="Home">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html" title="About Us">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="../index.html" title="Services">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="team.html" title="Team">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="mailto:vidshop010@gmail.com"
+                    title="Contact Us">Contact</a></li>
+        </ul>
+        <p>&copy;2023 VidShop | All Rights Reserved</p>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="../js/website.js"></script>
+</html>

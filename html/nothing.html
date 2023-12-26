@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rakesh karmaker">
+    <meta name="keywords" content="vidshop,video shop,video games hop,vidshop team">
+    <meta name="description"
+        content="Welcome to VidShop-books.Here you are able to read books you like without any problem.But if you have any problem you can always contact us.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <meta property="og:image:secure_url" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="image_src" href="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="canonical" href="https://vidshop010.000webhostapp.com" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../pics/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../pics/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../pics/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../pics/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../pics/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../pics/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../pics/apple-touch-icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../pics/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../pics/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../pics/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../pics/apple-touch-icon-192x192.png">
+    <link rel="shortcut icon" href="../pics/logo700.png">
+
+    <link rel="stylesheet" href="../css/books.css">
+    <script src="../js/books.js"></script>
+
+    <title>VidShop-Books</title>
+</head>
+
+<body id="body">
+    <!-- ---------------------------------------navbar starts here------------------------------------ -->
+    <nav id="nav">
+        <li class="pc" ><a href="index.html" id="logoname">VidShop</a></li>
+        <!-- -----------------------------mobile navbar starts here----------------------------- -->
+        <li id="mobile">
+            <button class="nav-btd" id="nav-btd-open" onclick="nav_list_open()"><i
+                    class="fa-solid fa-bars bars"></i></button>
+            <button class="nav-btd" id="nav-btd-close" onclick="nav_list_close()" style="display: none;"><i
+                    class="fa-solid fa-xmark bars"></i></button>
+            <div id="nav-mobile" style="display: none;">
+                <ul id="nav-list">
+                    <li class="mobile">
+                        <a class="mobile-navcategory" href="../index.html" title="Home">Home</a>
+                    </li>
+                    <li class="mobile">
+                        <button class="mobile-navcategory mobile-category" id="category-u-m"
+                            onclick="category_show_m()">Category <i
+                                class="fa-solid fa-angle-down  mobile-angle"></i></button>
+                        <button style="display: none;" class="mobile-navcategory mobile-category" id="category-d-m"
+                            onclick="category_hide_m()">Category <i
+                                class="fa-solid fa-angle-down fa-rotate-180 mobile-angle"></i>
+                        </button>
+                    </li>
+                    <li class="mobile">
+                        <a class="mobile-navcategory" href="mailto:vidshop010@gmail.com" target="_blank"
+                            title="Contact Us">Contact
+                            us</a>
+                    </li>
+                    <li class="mobile">
+                        <a class="mobile-navcategory" href="about.html" target="_blank" title="About Us">About
+                            Us</a>
+                    </li>
+                    <li class="mobile">
+                        <a href="team.html" class="mobile-navcategory" target="_blank" title="Team">Team</a>
+                    </li>
+                </ul>
+
+            </div>
+        </li>
+        <!-- ! ---------------------------------pc navbar starts here------------------------------ -->
+        <ul id="navbar-left">
+            <li class="pc">
+                <a class="navcategory" href="../index.html" title="Home">Home</a>
+            </li>
+            <li class="pc">
+                <button class="navcategory category" id="category-u" onclick="category_show()">Category <i
+                        class="fa-solid fa-angle-down angle"></i></button>
+                <button class="navcategory category" id="category-d" onclick="category_hide()"
+                    style="display: none;">Category <i class="fa-solid fa-angle-down fa-rotate-180"></i> </button>
+            </li>
+            <li class="pc">
+                <a class="navcategory" href="mailto:vidshop010@gmail.com" target="_blank" title="Contact Us">Contact
+                    us</a>
+            </li>
+            <li class="pc">
+                <a class="navcategory" href="about.html" target="_blank" title="About Us">About Us</a>
+            </li>
+            <li class="pc">
+                <a href="team.html" class="navcategory" target="_blank" title="Team">Team</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ! --------------------------------category part starts here--------------------------- -->
+    <section id="category-list" style="display: none;">
+        <div class="cat-services" id="cat-book">
+            <img src="../pics/books.jpg" alt="" class="cat-services-image" style="width: 92%;">
+            <h3 class="cat-services-h">Books</h3>
+            <p class="cat-services-p">You can read as much books as you like for free.So read them now for free!</p>
+            <a href="books.html" class="cat-services-a" id="cat-services-a-book">Read</a>
+
+        </div>
+        <div class="cat-services" id="cat-game">
+            <img src="../pics/games.jpg" alt="" class="cat-services-image" style="width: 92%;">
+            <h3 class="cat-services-h">Games</h3>
+            <p class="cat-services-p">You can download a lot of games for free.There are old games and new games.
+            </p>
+            <a href="games.html" class="cat-services-a" id="cat-services-a-game">Download</a>
+
+        </div>
+        <div class="cat-services" id="cat-wallpaper">
+            <img src="https://wallup.net/wp-content/uploads/2019/09/726722-landscape.jpg" alt=""
+                class="cat-services-image" style="width: 92%;">
+            <h3 class="cat-services-h">Wallpapers</h3>
+            <p class="cat-services-p">You can get many different wallpapers.You can even customize them.</p>
+            <a href="wallpapers.html" class="cat-services-a" id="cat-services-a-wallpaper">Get</a>
+
+        </div>
+        <div class="cat-services" id="cat-website">
+            <img src="../pics/website.webp" alt="" class="cat-services-image" style="width: 92%;">
+            <h3 class="cat-services-h">Websites</h3>
+            <p class="cat-services-p">You can build your own websites by telling us what you want to build.</p>
+            <a href="website.html" class="cat-services-a" id="cat-services-a-website">Build</a>
+
+        </div>
+        <div class="cat-services" id="cat-other">
+            <img src="../pics/other.jpg" alt="" class="cat-services-image" style="width: 92%;">
+            <h3 class="cat-services-h">Others</h3>
+            <p class="cat-services-p">Here you can review a lot of experimental things created by us and rate them.
+            </p>
+            <a href="other.html" class="cat-services-a" id="cat-services-a-other">Preview</a>
+
+        </div>
+    </section>
+    <section id="mainpart">
+
+        <!-- ------------------------------main part starts here----------------------------------  -->
+        <main id="main">
+            <section id="nothing">
+                <img src="../pics/sorry.webp" alt="Sorry" id="sorry">
+                <h1 id="sorry-h"><i class="fa-solid fa-exclamation ex"></i>Nothing available<i
+                    class="fa-solid fa-exclamation ex"></i></h1>
+                    <p id="sorry-p">Sorry currently the page is unavailable.Ether the page is under development or the page is
+                        unavailable.We will finish the problems and upload this page very soon.</p>
+                        <button href="../index.html" id="sorry-b"><a href="../index.html" id="sorry-a">
+                    <i class="fa-solid fa-arrow-right arrow"></i>Go to homepage
+                </a></button>
+            </section>
+        </main>
+    <!-- !  --------------------------------------------------footer part starts here--------------------------------------------------------------  -->
+
+    <footer id="footer">
+        <ul id="social-icon">
+
+            <li class="asocial-icon">
+                <a href="https://www.facebook.com/groups/837578491429797" target="_blank" title="facebook"
+                class="aicon">
+                    <i class="fa-brands fa-facebook icon" id="facebookj"></i>
+                </a>
+            </li>
+
+            <li class="asocial-icon">
+                <a href="https://www.messenger.com/t/24399959282951076" target="_blank" title="messenger"
+                    id="meggengerj" class="aicon">
+                    <i class="fa-brands fa-facebook-messenger icon" id="meggengerj"></i>
+                </a>
+            </li>
+            <li class="asocial-icon">
+                <a href="https://discord.gg/RbMj5enU" target="_blank" title="discord" class="aicon">
+                    <i class="fa-brands fa-discord icon" id="discordj"></i>
+                </a>
+            </li>
+            <li class="asocial-icon">
+                <a href="https://web.telegram.org/k/" target="_blank" title="telegram" class="aicon">
+                    <i class="fa-brands fa-telegram icon" id="telegramj"></i>
+                </a>
+            </li>
+            <li class="asocial-icon">
+                <a href="https://twitter.com/vidshop010" target="_blank" title="twitter" id="twitterj" class="aicon">
+                    <i class="fa-brands fa-x-twitter icon"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="../index.html" title="Home">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html" title="About Us">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="../index.html" title="Services">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="team.html" title="Team">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="mailto:vidshop010@gmail.com"
+                title="Contact Us">Contact</a></li>
+            </ul>
+            <p>&copy;2023 VidShop | All Rights Reserved</p>
+        </footer>
+    </section> 
+</body>
+</html>
