@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0%;
+    background: white;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    z-index: 99999999999999999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+main{
+    position: relative;
+    z-index: 99999999999999999999;
+    background: white;
+}
+#main-prime{
+    margin: 0;
+    padding: 0%;
+    background: linear-gradient(-135deg,#c850c0,#4258d0);
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100%;
+    z-index: 99999999999999999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#primenum{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-135deg,#c850c0,#4258d0);
+    z-index: 9999999999999999;
+}
+/* -------------mainpart starts here-------------- */
+#mainpart{
+    margin-top: 150px;
+    width: 70%;
+    height: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../pics/background.jpeg");
+    margin-bottom: 95px;
+}
+#testing{
+    display: flex;
+    flex-direction: row;
+    background-color: #00000070;;
+}
+.result-screen{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 250px;
+    height: 250px;
+    margin: 140px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    filter: blur();
+    border-radius: 7px;
+    font-size: 23px;
+}
+.resultp{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#rno{
+    padding-top: 110px;
+}
+#testingpart{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    width: 69%;
+    margin: 80px 40px;
+    
+}
+#para1{
+    margin-top: 40px;
+    font-size: 1vw;
+}
+#heading2{
+    margin-top: 32px;
+}
+#num{
+    font-size: large;
+    color: aliceblue;
+    background-color: #00000000 ;
+    outline: none;
+    border: none;
+    position: relative;
+    transition: 0.25s;
+    border-bottom: 1px solid gray;
+}
+#test-btd::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    transition: 0.25s;
+
+}
+#test-btd:hover::after{
+    width: 100%;
+}
+#num:focus{
+    border-bottom: 1px solid white;
+}
+#lnum, #num{
+    margin-top: 10px;
+}
+.test-btd{
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 15px 60px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: 0.25s ease;
+}
+.test-btd:hover{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.emoji{
+    font-size: 100px;
+}
+#number-r1{
+    font-size: 17px;
+}
+#number-r2{
+    font-size: 17px;
+}
+/* -------------prime number part starts here------------ */
+#primenumbers{
+    position: absolute;
+    z-index: 99999999999999999999999999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.226);
+    backdrop-filter: blur(3px);
+    text-align: center;
+}
+#pheading{
+    font-size: 80px;
+    font-family: 'Great Vibes';
+    color: rgb(120, 107, 121);
+}
+.bars{
+    padding: 10px;
+    float: left;
+    color: black;
+}
+#list{
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.25s;
+}
+#list:focus{
+    background-color: rgb(116, 99, 99);
+}
+
+#dlist{
+    margin-left: 10px;
+    font-size: 20px;
+    justify-self: left;
+    text-align: left;
+    color: aliceblue;
+}
+#numbers{
+    margin-top: 10px;
+    width: 100%;
+    /* height: 100%; */
+    text-align: left;
+}
+.numbers{
+    height: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    z-index: 99999999999999999999999999999999999;
+}
+.numbers-p{
+    height: 100%;
+}
+.a{
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.397);
+}
+.c{
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.329);
+}
+
+/* --------------responsive part starts here------------ */
+@media screen and (max-width:1100px) {
+    #lnum{
+        display: none;
+    }
+    #testingpart{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .test-btd{
+        padding: 20px 30px;
+    }
+    #heading1{
+        font-size: 15px;
+    }
+    .test-btd{
+        font-size: 10px;
+    }
+    #mainpart{
+        height: 400px;
+    }
+    .result-screen{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width:950px) {
+    .resultp{
+        font-size: 20px;
+        color: rgb(121, 121, 121);
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    #mainpart{
+        height: 550px;
+    }
+    #testing{
+        height: 550px;
+        display: block;
+    }
+    #rno{
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 90px;
+        color: rgb(114, 114, 114);
+    }
+    #result-area{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .result-screen{
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    #testingpart{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+        width: 90%;
+    }
+}
+@media screen and (max-width:650px) {
+    #para1{
+        font-size: 2vw;
+    }
+    #mainpart{
+        height: 600px;
+    }
+    #testing{
+        height: 600px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    #pheading{
+        font-size: 50px;
+    }
+    #dlist{
+        margin-top: 10px;
+        margin-bottom:20px ;
+        font-size: 20px;
+    }
+    #llist{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:440px) {
+    #mainpart{
+        width: 100%;
+        margin: 0px 0px;
+        position: absolute;
+    }
+    #testing{
+        width: 100vw;
+        margin-right: 4px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .result-screen{
+        margin: 10px 0px;
+    }
+    #testingpart{
+        width: 100%;
+        margin-left: 4px;
+        margin-right: 0px;
+    }
+    #para1{
+        padding-right: 10px;
+        color: black;
+    }
+    #heading1{
+        color: black;
+    }
+    #heading2{
+        color: black;
+    }
+    .numbers-p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:300px) {
+    #llist{
+        display:none;
+    }
+    #pheading{
+        font-size: 30px;
+    }
+
+}
+@media screen and (max-width:270px) {
+    #para1{
+        font-size: 10px;
+    }
+    .test-btd {
+        padding: 10px 10px;
+    }
+    #num{
+        width: 110px;
+    }
+    #heading2{
+        font-size: 17px;
+    }
+}
+    

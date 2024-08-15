@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Rakesh karmaker">
+    <meta name="keywords" content="Games,games,books,websites,vidshop,videoshop,videogameshop">
+    <meta name="description"
+        content="Welcome to VidShop.Here you can do a lot of things to enjoy yourself in your free time.You can get a lot of games for free and so on.You can also build your own websites.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <meta property="og:image:secure_url" content="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="image_src" href="https://vidshop010.000webhostapp.com/pics/background.png">
+    <link rel="canonical" href="https://vidshop010.000webhostapp.com" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="pics/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="pics/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="pics/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pics/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="pics/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pics/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="pics/apple-touch-icon-128x128.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="pics/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pics/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="pics/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="pics/apple-touch-icon-192x192.png">
+    <link rel="shortcut icon" href="pics/logo700.png">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>VidShop-Home</title>
+</head>
+
+<body>
+    <section id="main">
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------navbar starts here------------------------------------ -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+
+
+        <nav id="nav">
+            <li class="pc"><a href="index.html" id="logoname" style="text-decoration: none;">
+                    <p class="hello">VidShop</p>
+                </a></li>
+
+
+
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!-- ----------------------------------mobile navbar starts here---------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+
+            <li id="mobile">
+                <button class="nav-btd" id="nav-btd-open" onclick="nav_list_open()"><i
+                        class="fa-solid fa-bars bars"></i></button>
+                <button class="nav-btd" id="nav-btd-close" onclick="nav_list_close()" style="display: none;"><i
+                        class="fa-solid fa-xmark bars"></i></button>
+                <div id="nav-mobile" style="display: none;">
+                    <ul id="nav-list">
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="index.html" title="Home">Home</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <button class="navcategory mobile-category" id="category-u-m">Category <i
+                                    class="fa-solid fa-angle-down  mobile-angle"></i></button>
+                            <ul id="mobile-category">
+                                <li class="cat_li_m"><a href="html/books.html" class="ser" id="cat_b">Books</a></li>
+                                <li class="cat_li_m"><a href="html/games.html" class="ser" id="cat_g">Games</a></li>
+                                <li class="cat_li_m"><a href="html/website.html" class="ser" id="cat_w">Website</a></li>
+                                <li class="cat_li_m" style="padding-bottom: 10px;"><a href="html/other.html" class="ser"
+                                        id="cat_o">Other</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="mailto:vidshop010@gmail.com" target="_blank"
+                                title="Contact Us">Contact us</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a class="mobile-navcategory" href="html/about.html" target="_blank" title="About Us">About
+                                Us</a>
+                        </li>
+
+
+                        <li class="mobile">
+                            <a href="html/team.html" class="mobile-navcategory" target="_blank" title="Team">Team</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!-- ---------------------------------------pc navbar starts here--------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+
+
+            <ul class="navbar-left">
+
+
+                <li class="pc">
+                    <a class="navcategory" href="index.html" title="Home">Home</a>
+                </li>
+
+
+                <li class="pc">
+                    <button class="navcategory category" id="category-u">Category <i
+                            class="fa-solid fa-angle-down angle"></i></button>
+                    <ul id="category">
+                        <li class="cat_li"><a href="html/books.html" class="ser" id="cat_b">Books <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left: 17px;"></i></a></li>
+                        <li class="cat_li"><a href="html/games.html" class="ser" id="cat_g">Games <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left: 9px;"></i></a></li>
+                        <li class="cat_li"><a href="html/website.html" class="ser" id="cat_w">Website <i
+                                    class="fa-solid fa-arrow-right arrow" style="padding-left:2px;"></i></a></li>
+                        <li class="cat_li" style="padding-bottom: 10px;"><a href="html/other.html" class="ser"
+                                id="cat_o">Other <i class="fa-solid fa-arrow-right arrow"
+                                    style="padding-left: 20px;"></i></a></li>
+                    </ul>
+                </li>
+
+
+                <li class="pc">
+                    <a class="navcategory" href="mailto:vidshop010@gmail.com" target="_blank" title="Contact Us">Contact
+                        us</a>
+                </li>
+
+
+                <li class="pc">
+                    <a class="navcategory" href="html/about.html" target="_blank" title="About Us">About Us</a>
+                </li>
+
+
+                <li class="pc">
+                    <a href="html/team.html" class="navcategory" target="_blank" title="Team">Team</a>
+                </li>
+
+
+            </ul>
+        </nav>
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <!--! --------------------------------------------main part starts here----------------------------- -->
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <main class="main_part">
+
+            <section id="mainpart">
+                <!-- --------------------------------------------------------------------------------------------- -->
+                <!--! ------------------------------------slideshow starts here------------------------------------ -->
+                <!-- --------------------------------------------------------------------------------------------- -->
+                <div id="intro">
+                    <P id="intro-heading" class="intro">WELCOME</P>
+                    <p id="intro-p"><sup>"</sup>
+                        <span class="at">Get</span>
+                        <span class="at">yourself</span>
+                        <span class="at">ready</span>
+                        <sup>"</sup>
+                    </p>
+                </div>
+            </section>
+
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!--! -------------------------------container starts Here----------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+            <main id="container">
+                <div id="header">
+                    <p class="heading">Our Services</p>
+                    <div class="line"></div>
+                </div>
+
+
+                <div id="book" class="services left">
+                    <h3 class="services-h">Books</h3>
+                    <p class="services-p">You can read as much books as you like for free.So read them now for free!</p>
+                    <div class="services-e">
+                        <a href="html/books.html" class="services-a" id="book-a">Read</a>
+                        <i class="fa-solid fa-book services-i"></i>
+                    </div>
+                </div>
+
+
+
+
+                <div id="game" class="services left">
+                    <h3 class="services-h">Games</h3>
+                    <p class="services-p">You can download a lot of games for free.There are old games and new games.
+                    </p>
+                    <div class="services-e">
+                        <a href="html/games.html" class="services-a" id="game-a">Download</a>
+                        <i class="fa-solid fa-headset services-i"></i>
+                    </div>
+                </div>
+
+
+
+
+                <div id="wallpaper" class="services right">
+                    <h3 class="services-h">Others</h3>
+                    <p class="services-p">Here you can review a lot of experimental things created by us and rate them.
+                    </p>
+                    <div class="services-e">
+                        <a href="html/other.html" class="services-a" id="wallpaper-a">Get</a>
+                        <i class="fa-solid fa-magnifying-glass services-i"></i>
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="website" class="services right">
+                    <h3 class="services-h">Websites</h3>
+                    <p class="services-p">You can build your own websites by telling us what you want to build.</p>
+                    <div class="services-e">
+                        <a href="html/website.html" class="services-a" id="website-a">Build</a>
+                        <i class="fa-solid fa-desktop services-i"></i>
+                    </div>
+                </div>
+            </main>
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!--!----------------------------------- description part starts here----------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <section class="dis_spec_pre">
+                <section class="dis_spec_pre_top">
+                    <button class="btd dis_btd" style="background-color: #4767c9; color: white;"
+                        onclick="description()">
+                        <p class="btd_p">Description</p>
+                    </button>
+                    <button class="btd spec_btd" onclick="specification()">
+                        <p class="btd_p">Specifications</p>
+                    </button>
+                    <button class="btd pre_btd" onclick="preview()">
+                        <p class="btd_p">Previews</p>
+                    </button>
+                </section>
+                <section class="dis_spec_pre_main">
+                    <section class="dis_main">
+                        <p class="dis_p">VidShop is a website where you can do a lot of things in your free time. On
+                            this
+                            website, you can do a lot of things, like see a lot of books all over the world, download a
+                            lot
+                            of games for free without any problems, preview different experimental projects created by
+                            us,
+                            and finally, we can build websites for free. So sit back and enjoy our services.</p>
+                        <p class="dis_point"><i class="fa-solid fa-check fa-2xl tick"></i>Read the books for free.</p>
+                        <p class="dis_point"><i class="fa-solid fa-check fa-2xl tick"></i>Download things for free.</p>
+                        <p class="dis_point"><i class="fa-solid fa-check fa-2xl tick"></i>Explore different things.</p>
+                        <p class="dis_point" style="margin-bottom: 30px;"><i
+                                class="fa-solid fa-check fa-2xl tick"></i>All things are user friendly.</p>
+                        <a class="dis_a" href="html/about.html">Learn more</a>
+                    </section>
+
+
+
+
+                    <section class="spec_main" style="display: none;">
+                        <p class="spec_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+                            provident
+                            vero eligendi sed, veniam voluptate, dignissimos dolorem eveniet distinctio qui, natus
+                            tenetur
+                            corrupti. Similique, labore!</p>
+                        <p class="spec_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vitae aliquam
+                            quia,
+                            quidem ex sed, voluptatem autem hic debitis, totam ipsam. Voluptatum magnam laborum
+                            perferendis
+                            harum beatae unde recusandae sequi.</p>
+                    </section>
+
+
+
+
+                    <section class="pre_main" style="display: none;">
+                        <p class="pre_heading">Be The First To Review This Product!</p>
+                        <p class="pre_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia libero
+                            voluptatum et quidem alias exercitationem pariatur!</p>
+                        <a href="html/nothing.html" class="pre_a">WRITE PRODUCT PREVIEW</a>
+                    </section>
+                </section>
+            </section>
+
+
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!--!------------------------------------ new part starts here------------------------------------ -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <section class="new">
+                <div id="new_heading">
+                    <p class="new_heading">LATEST</p>
+                    <div id="line">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <section class="new_main">
+                    <section id="new_main">
+                        <section id="new_main_para">
+                            <div class="new_main_para">
+                                <p class="new_main_heading heading_animate">Stickman</p>
+                                <p class="new_main_paragraph para_animate">There was a man called Stickman who was a
+                                    famous
+                                    thief. He was famous all over the world because no one could catch him. He was very
+                                    proud of that fact. But one day when he woke up in the morning, he found himself in
+                                    a
+                                    place where he has to do a lot of tasks to survive.</p>
+                                <div class="line_para"></div>
+                                <a href="others/stickman1.html" class="new_go">Go<i
+                                        class="fa-solid fa-arrow-right arrow_new" style="padding-left: 15px;"></i></a>
+                            </div>
+                            <a class="new_thing thing_animate" href="others/stickman1.html">
+                                <i class="fa-solid fa-skull-crossbones hash"></i>
+                                <h3 class="new_thing_h"><span class="h">Stickman</span></h3>
+                                <p class="new_thing_p">Here you can see a lot of Episodes of the daily life of a
+                                    stickman
+                                    who does a lot of tests to survive.</p>
+                            </a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <!--! -------------------------------------footer starts here-------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------------------- -->
+
+
+            <footer id="footer-main">
+
+                <div id="footerimg">
+                    <img id="fimg" src="pics/footer.png" alt="footer">
+                </div>
+
+
+                <section id="footer">
+                    <ul id="social-icon">
+                        <li class="asocial-icon">
+                            <a href="https://www.facebook.com/groups/837578491429797" target="_blank" title="facebook"
+                                class="aicon">
+                                <i class="fa-brands fa-facebook icon" id="facebookj"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="asocial-icon">
+                            <a href="https://www.messenger.com/t/24399959282951076" target="_blank" title="messenger"
+                                id="meggengerj" class="aicon">
+                                <i class="fa-brands fa-facebook-messenger icon" id="meggengerj"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="asocial-icon">
+                            <a href="https://discord.gg/RbMj5enU" target="_blank" title="discord" class="aicon">
+                                <i class="fa-brands fa-discord icon" id="discordj"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="asocial-icon">
+                            <a href="https://web.telegram.org/k/" target="_blank" title="telegram" class="aicon">
+                                <i class="fa-brands fa-telegram icon" id="telegramj"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="asocial-icon">
+                            <a href="https://twitter.com/vidshop010" target="_blank" title="twitter" id="twitterj"
+                                class="aicon">
+                                <i class="fa-brands fa-x-twitter icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="#home" title="Home">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="html/about.html" title="About Us">About</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="#main" title="Services">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="html/team.html" title="Team">Team</a></li>
+                        <li class="menu__item"><a class="menu__link" href="mailto:vidshop010@gmail.com"
+                                title="Contact Us">Contact</a></li>
+                    </ul>
+
+                    <p>&copy;2023 VidShop | All Rights Reserved</p>
+                </section>
+            </footer>
+            <script src="js/indexanime.js"></script>
+    </section>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
+
+
+
+
+
+ 
